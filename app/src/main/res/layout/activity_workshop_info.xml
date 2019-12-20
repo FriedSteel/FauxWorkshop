@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkshopInfo">
+
+    <TextView
+        android:id="@+id/workshop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp"
+        android:layout_margin="5sp"/>
+
+    <TextView
+        android:id="@+id/company_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workshop_title"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/company"
+        android:fontFamily="@font/nunito"
+        android:textSize="13sp"
+        android:textColor="@color/med_grey"/>
+
+    <TextView
+        android:id="@+id/company_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workshop_title"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/company_text"
+        android:text="@string/loading"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/duration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company_text"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/duration"
+        android:fontFamily="@font/nunito"
+        android:textSize="13sp"
+        android:textColor="@color/med_grey"/>
+
+    <TextView
+        android:id="@+id/duration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company_text"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/duration_text"
+        android:text="@string/loading"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_text"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/location"
+        android:fontFamily="@font/nunito"
+        android:textSize="13sp"
+        android:textColor="@color/med_grey"/>
+
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_text"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/location_text"
+        android:text="@string/loading"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/fee_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/fee"
+        android:fontFamily="@font/nunito"
+        android:textSize="13sp"
+        android:textColor="@color/med_grey"/>
+
+    <TextView
+        android:id="@+id/rupee_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/fee_text"
+        android:text="@string/rupee_symbol"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/fee_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/rupee_symbol"
+        android:text="@string/loading"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/apply_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fee_text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_color"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="15sp"
+        android:text="@string/apply"/>
+
+    <Button
+        android:id="@+id/applied_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apply_btn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_color"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:text="@string/successfully_applied"/>
+
+</RelativeLayout>
